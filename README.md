@@ -1,0 +1,2 @@
+# CurriculumAppApiUsers
+apiUser
