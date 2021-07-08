@@ -1,7 +1,8 @@
-package com.curriculumapp.api.users.security;
+/**package com.curriculumapp.api.users.security;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 
 import javax.servlet.FilterChain;
@@ -14,6 +15,8 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
@@ -67,6 +70,7 @@ public class AuthenticationFilter  extends UsernamePasswordAuthenticationFilter 
 						.compact();
 		res.addHeader("token", token);
 		res.addHeader("userId", userDetails.getUserId());
+
 	}
 
-}
+}/**/
